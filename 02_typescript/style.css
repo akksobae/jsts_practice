@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.frame {
+    background-color: rgb(48, 48, 128);
+    height: 20vmin;
+    width: 20vmin;
+}

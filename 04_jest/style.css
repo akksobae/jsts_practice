@@ -1,0 +1,134 @@
+:root {
+    --white: rgb(239, 230, 244);
+    --dark: rgb(85, 58, 97);
+    ;
+    --body-bg: rgb(226, 208, 233);
+    --background-bg: rgb(234, 222, 239);
+    --foreground-fg: var(--white);
+    --foreground-bg: rgb(85, 58, 97);
+    --palace-fg: var(--dark);
+    --palace-bg: rgb(234, 222, 239);
+    --palace-bd-width: 2px;
+    --palace-bd-color: rgb(136, 119, 143);
+}
+
+body {
+    background-color: var(--body-bg);
+    height: 100vh;
+    margin: 0;
+}
+
+.background-frame {
+    background-color: var(--background-bg);
+    height: 95vmin;
+    width: 62vmin;
+    min-width: calc(512px + 32px * 2);
+    min-height: calc(512px + (64px + 32px) * 3);
+    margin: 0 auto;
+}
+
+.foreground-frame {
+    background-color: var(--foreground-bg);
+    color: var(--foreground-fg);
+    font-family: "Zen Maru Gothic";
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+}
+
+.life-board {
+    background-color: var(--palace-bg);
+    width: 60vmin;
+    height: 60vmin;
+    min-width: 512px;
+    min-height: 512px;
+    max-width: 1024px;
+    max-height: 1024px;
+    border: 2px solid var(--palace-bd-color);
+    position: relative;
+    margin: 32px auto;
+}
+
+.palace-box {
+    position: absolute;
+    background-color: var(--palace-bg);
+    border: var(--palace-bd-width) solid var(--palace-bd-color);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.palace {
+    width: 25%;
+    height: 25%;
+    min-width: 128px;
+    min-height: 128px;
+}
+
+.palace-center {
+    width: 50%;
+    height: 50%;
+    min-width: 256px;
+    min-height: 256px;
+    top: 25%;
+    left: 25%;
+}
+
+.palace:nth-of-type(1) {
+    top: 0%;
+    left: 0%;
+}
+
+.palace:nth-of-type(2) {
+    top: 0%;
+    left: 25%;
+}
+
+.palace:nth-of-type(3) {
+    top: 0%;
+    left: 50%;
+}
+
+.palace:nth-of-type(4) {
+    top: 0%;
+    left: 75%;
+}
+
+.palace:nth-of-type(5) {
+    top: 25%;
+    left: 75%;
+}
+
+.palace:nth-of-type(6) {
+    top: 50%;
+    left: 75%;
+}
+
+.palace:nth-of-type(7) {
+    top: 75%;
+    left: 75%;
+}
+
+.palace:nth-of-type(8) {
+    top: 75%;
+    left: 50%;
+}
+
+.palace:nth-of-type(9) {
+    top: 75%;
+    left: 25%;
+}
+
+.palace:nth-of-type(10) {
+    top: 75%;
+    left: 0%;
+}
+
+.palace:nth-of-type(11) {
+    top: 50%;
+    left: 0%;
+}
+
+.palace:nth-of-type(12) {
+    top: 25%;
+    left: 0%;
+}
